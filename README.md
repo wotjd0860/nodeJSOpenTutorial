@@ -44,3 +44,6 @@ Zoom Cling using NodeJS, WebRTC and Websockets
   ```npm i socket.io```
 - Installed SocketIO in the browser using an url (http://localhost:3000/socket.io/socket.io.js)
 - Learned about Room
+
+### [2024-04-19]
+- Room Notification
