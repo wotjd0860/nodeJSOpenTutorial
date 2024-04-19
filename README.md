@@ -36,3 +36,11 @@ Zoom Cling using NodeJS, WebRTC and Websockets
   ```npm i ws```
 - Implemented basic functions for messaging.
 - Checked some possible improvements.
+- ```npm run dev```
+
+### [2024-04-18]
+- Start from SocketIO (https://socket.io/)
+
+  ```npm i socket.io```
+- Installed SocketIO in the browser using an url (http://localhost:3000/socket.io/socket.io.js)
+- Learned about Room

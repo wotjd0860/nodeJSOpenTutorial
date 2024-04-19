@@ -1,6 +1,7 @@
 import express from "express";  // handling http
 import http from "http";
-import Websocket from "ws";
+// import Websocket from "ws";
+import SocketIO from "socket.io";
 
 const app = express();
 
@@ -18,10 +19,12 @@ const handleListen = () => console.log(`Listening on http://localhost:3000`);
 // app.listen(3000, handleListen);
 
 // http server
-const server = http.createServer(app);
+const httpServer = http.createServer(app);
+
+/* WebSocket Server Codes */
+/*
 // new websocket server
 const wss = new Websocket.Server({ server });
-
 // fake database
 const sockets = [];
 
@@ -44,5 +47,21 @@ wss.on("connection", (socket) => {
         }
     });
 });
+*/
 
-server.listen(3000, handleListen);
+/* SocketIO Server Codes */
+const wsServer = SocketIO(httpServer);
+
+wsServer.on("connection", (socket) => {
+    socket.onAny((event) => {
+        console.log(`Socket Event: ${event}`);
+    });
+    socket.on("enter_room", (roomName, done) => {
+        socket.join(roomName);
+        done();
+        socket.to(roomName).emit("welcome");
+    });
+});
+
+
+httpServer.listen(3000, handleListen);
