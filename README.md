@@ -47,3 +47,12 @@ Zoom Cling using NodeJS, WebRTC and Websockets
 
 ### [2024-04-19]
 - Room Notification
+
+### [2024-04-20]
+- Admin Panel (https://socket.io/docs/v4/admin-ui/)
+
+    ```npm i @socket.io/admin-ui```
+- WebRTC
+  
+  (https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia)
+  (https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/enumerateDevices)
