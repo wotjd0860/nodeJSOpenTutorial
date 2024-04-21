@@ -52,7 +52,13 @@ Zoom Cling using NodeJS, WebRTC and Websockets
 - Admin Panel (https://socket.io/docs/v4/admin-ui/)
 
     ```npm i @socket.io/admin-ui```
-- WebRTC
+- WebRTC (Web Real Time Communication) (https://webrtc.org/)
+- Installed Local Tunnel
+    
+    ```npm i -g localtunnel```
+    ```lt --port 3000``` -> create url
+- STUN
   
-  (https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia)
-  (https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/enumerateDevices)
+  If my phone and PC are not in the same Wifi, there would be and error. To resolve this error, STUN Server is needed.
+
+- Data Channel
