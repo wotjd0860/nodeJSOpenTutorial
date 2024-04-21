@@ -3,7 +3,7 @@
 Zoom Cling using NodeJS, WebRTC and Websockets
 
 ## General Information
-- Period : 2024-04-17 ~ 
+- Period : 2024-04-17 ~ 2024-04-20
 - Member : Jaeseong Park
 
 ## Skills
